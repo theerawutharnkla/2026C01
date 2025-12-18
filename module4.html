@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4: การติดตามสถานะและการขอคืนภาษี - Tax Hero</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['IBM Plex Sans Thai', 'sans-serif'] },
+                    colors: { primary: '#4F46E5', secondary: '#10B981', accent: '#F59E0B', dark: '#1F2937' }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hover-lift { transition: transform 0.3s; }
+        .hover-lift:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="bg-purple-50/30 text-gray-800">
+
+    <nav class="bg-white/90 backdrop-blur shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
+            <a href="index.html" class="flex items-center text-dark font-bold hover:text-purple-600 transition-colors">
+                <i class="fa-solid fa-arrow-left mr-2"></i> หน้าหลัก
+            </a>
+            <div class="flex items-center gap-3">
+                <span class="text-sm text-gray-500 font-medium">Module 4 / 5</span>
+                <div class="w-32 bg-gray-200 rounded-full h-2">
+                    <div class="bg-purple-600 h-2 rounded-full" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-10 max-w-4xl mx-auto px-4">
+        
+        <header class="text-center mb-12">
+            <div class="inline-block p-4 rounded-full bg-purple-100 text-purple-600 text-3xl mb-4">
+                <i class="fa-solid fa-magnifying-glass-dollar"></i>
+            </div>
+            <h1 class="text-3xl md:text-5xl font-bold text-dark mb-4">การติดตามสถานะและการขอคืนภาษี</h1>
+            <p class="text-gray-600">อย่ายื่นแล้วทิ้ง! เรียนรู้วิธีตามเงินคืนและทำอย่างไรให้ได้เงินไวที่สุด</p>
+        </header>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-dark mb-6">ช่องทางการติดตามสถานะ</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-purple-500 text-center hover-lift">
+                    <i class="fa-solid fa-desktop text-4xl text-purple-500 mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">เว็บไซต์กรมสรรพากร</h3>
+                    <p class="text-sm text-gray-600">เมนู "My Tax Account" > ติดตามสถานะขอคืน/นำส่งเอกสาร</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-purple-500 text-center hover-lift">
+                    <i class="fa-solid fa-headset text-4xl text-purple-500 mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">RD Call Center</h3>
+                    <p class="text-sm text-gray-600">โทร <span class="font-bold text-xl">1161</span><br>(เวลาทำการ)</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-purple-500 text-center hover-lift">
+                    <i class="fa-solid fa-building text-4xl text-purple-500 mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">สำนักงานพื้นที่</h3>
+                    <p class="text-sm text-gray-600">ติดต่อเจ้าหน้าที่ ณ สรรพากรพื้นที่ตามภูมิลำเนา</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="bg-white rounded-2xl shadow p-8 mb-12">
+            <h2 class="text-xl font-bold mb-4 flex items-center"><i class="fa-solid fa-hourglass-half mr-2 text-orange-500"></i> ระยะเวลาการคืนภาษี</h2>
+            <p class="mb-4">โดยทั่วไปจะได้รับคืนภายใน <span class="font-bold text-purple-600">3 เดือน</span> นับจากวันที่ยื่นแบบฯ แต่จะช้าหรือเร็วขึ้นอยู่กับ:</p>
+            <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                <li><span class="font-bold">ความถูกต้อง:</span> เอกสารครบ ข้อมูลตรง พิจารณาเร็ว</li>
+                <li><span class="font-bold">ช่องทาง:</span> ยื่นออนไลน์ (e-Filing) เร็วกว่ากระดาษ</li>
+                <li><span class="font-bold">การขอเอกสารเพิ่ม:</span> หากถูกเรียกตรวจ ต้องรีบส่งเอกสาร</li>
+            </ul>
+        </div>
+
+        <section class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl p-8 md:p-12 text-white shadow-2xl relative overflow-hidden mb-12">
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
+            
+            <div class="relative z-10 flex flex-col md:flex-row items-center gap-8">
+                <div class="flex-1">
+                    <h2 class="text-3xl font-bold mb-4">เคล็ดลับ: รับเงินคืนไวที่สุด!</h2>
+                    <p class="text-blue-100 text-lg mb-6">
+                        "ผูกบัญชีพร้อมเพย์ (PromptPay) กับ <span class="font-bold text-yellow-300 underline">เลขบัตรประชาชน</span>"
+                    </p>
+                    <div class="flex items-center gap-3 text-sm bg-white/20 p-3 rounded-lg inline-flex backdrop-blur">
+                        <i class="fa-solid fa-bolt text-yellow-300"></i>
+                        <span>ได้รับเงินโอนเข้าบัญชีภายใน 3-5 วันทำการ (หลังอนุมัติ)</span>
+                    </div>
+                </div>
+                <div class="w-32 h-32 bg-white rounded-2xl flex items-center justify-center shadow-lg transform rotate-3">
+                    <i class="fa-solid fa-qrcode text-6xl text-blue-900"></i>
+                </div>
+            </div>
+        </section>
+
+        <div class="flex justify-between">
+            <a href="module3.html" class="px-6 py-3 rounded-full bg-white border border-gray-300 text-gray-600 hover:bg-gray-50 font-medium transition-all hover-lift">
+                <i class="fa-solid fa-chevron-left mr-2"></i> บทที่ 3
+            </a>
+            <a href="module5.html" class="px-8 py-3 rounded-full bg-primary text-white font-bold shadow-lg hover:bg-indigo-700 hover-lift flex items-center transition-all">
+                ไปต่อที่ Module 5 <i class="fa-solid fa-chevron-right ml-2"></i>
+            </a>
+        </div>
+
+    </main>
+</body>
+</html>

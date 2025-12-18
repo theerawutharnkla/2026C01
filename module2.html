@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2: เงินได้และค่าลดหย่อน - Tax Hero</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['IBM Plex Sans Thai', 'sans-serif'] },
+                    colors: { primary: '#4F46E5', secondary: '#10B981', accent: '#F59E0B', dark: '#1F2937' }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hover-lift { transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .card-icon { background: linear-gradient(135deg, #4F46E5 0%, #818cf8 100%); }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800">
+
+    <nav class="bg-white/90 backdrop-blur shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
+            <a href="index.html" class="flex items-center text-dark font-bold hover:text-primary transition-colors">
+                <i class="fa-solid fa-arrow-left mr-2"></i> หน้าหลัก
+            </a>
+            <div class="flex items-center gap-3">
+                <span class="text-sm text-gray-500 font-medium">Module 2 / 5</span>
+                <div class="w-32 bg-gray-200 rounded-full h-2">
+                    <div class="bg-secondary h-2 rounded-full" style="width: 40%"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-10 max-w-5xl mx-auto px-4">
+        
+        <header class="text-center mb-12">
+            <div class="inline-block p-4 rounded-full bg-green-100 text-secondary text-3xl mb-4 shadow-inner">
+                <i class="fa-solid fa-wallet"></i>
+            </div>
+            <h1 class="text-3xl md:text-5xl font-bold text-dark mb-4">เจาะลึก "เงินได้" และ "ค่าลดหย่อน"</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">เข้าใจเครื่องมือบริหารภาษี: 8 ประเภทเงินได้ และ 4 กลุ่มค่าลดหย่อน เพื่อการวางแผนที่มีประสิทธิภาพ</p>
+        </header>
+
+        <section class="mb-16">
+            <div class="flex items-center mb-6">
+                <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl mr-3">1</div>
+                <h2 class="text-2xl font-bold text-dark">ประเภทเงินได้พึงประเมิน (8 ประเภท)</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-white p-5 rounded-xl shadow border border-gray-100 hover-lift">
+                    <div class="text-primary font-bold text-lg mb-1">ประเภทที่ 1</div>
+                    <div class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-briefcase mr-1"></i> จ้างแรงงาน</div>
+                    <p class="text-gray-700 text-sm">เงินเดือน, ค่าจ้าง, โบนัส, เบี้ยเลี้ยง, บำเหน็จบำนาญ</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow border border-gray-100 hover-lift">
+                    <div class="text-primary font-bold text-lg mb-1">ประเภทที่ 2</div>
+                    <div class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-user-tie mr-1"></i> หน้าที่/ตำแหน่ง</div>
+                    <p class="text-gray-700 text-sm">ค่าธรรมเนียม, ค่านายหน้า, เบี้ยประชุม</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow border border-gray-100 hover-lift">
+                    <div class="text-primary font-bold text-lg mb-1">ประเภทที่ 3</div>
+                    <div class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-copyright mr-1"></i> ทรัพย์สินทางปัญญา</div>
+                    <p class="text-gray-700 text-sm">ค่าแห่งกู๊ดวิลล์, ค่าลิขสิทธิ์</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow border border-gray-100 hover-lift">
+                    <div class="text-primary font-bold text-lg mb-1">ประเภทที่ 4</div>
+                    <div class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-chart-line mr-1"></i> การลงทุน</div>
+                    <p class="text-gray-700 text-sm">ดอกเบี้ย, เงินปันผล, ส่วนแบ่งกำไร, คริปโตฯ</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow border border-gray-100 hover-lift">
+                    <div class="text-primary font-bold text-lg mb-1">ประเภทที่ 5</div>
+                    <div class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-house-chimney mr-1"></i> ทรัพย์สิน</div>
+                    <p class="text-gray-700 text-sm">ค่าเช่าบ้าน/ที่ดิน/รถยนต์, การผิดสัญญาเช่าซื้อ</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow border border-gray-100 hover-lift">
+                    <div class="text-primary font-bold text-lg mb-1">ประเภทที่ 6</div>
+                    <div class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-user-doctor mr-1"></i> วิชาชีพอิสระ</div>
+                    <p class="text-gray-700 text-sm">หมอ, วิศวะ, สถาปัตย์, บัญชี, ทนาย, ประณีตศิลป์</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow border border-gray-100 hover-lift">
+                    <div class="text-primary font-bold text-lg mb-1">ประเภทที่ 7</div>
+                    <div class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-helmet-safety mr-1"></i> รับเหมา</div>
+                    <p class="text-gray-700 text-sm">รับเหมาทั้งค่าแรงและค่าของ (ลงทุนเอง)</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow border border-gray-100 hover-lift">
+                    <div class="text-primary font-bold text-lg mb-1">ประเภทที่ 8</div>
+                    <div class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-store mr-1"></i> ธุรกิจ/อื่นๆ</div>
+                    <p class="text-gray-700 text-sm">การพาณิชย์, เกษตร, ขนส่ง, ขายของออนไลน์, อินฟลูฯ</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <div class="flex items-center mb-6">
+                <div class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-xl mr-3">2</div>
+                <h2 class="text-2xl font-bold text-dark">กลุ่มค่าลดหย่อนภาษี (4 กลุ่ม)</h2>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-l-8 border-blue-500">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-800 mb-4"><i class="fa-solid fa-users mr-2"></i>กลุ่มที่ 1: ส่วนตัวและครอบครัว</h3>
+                        <div class="grid md:grid-cols-2 gap-4 text-sm">
+                            <ul class="space-y-2">
+                                <li class="flex justify-between border-b border-gray-100 pb-1"><span>ส่วนตัว</span> <span class="font-bold">60,000 บ.</span></li>
+                                <li class="flex justify-between border-b border-gray-100 pb-1"><span>คู่สมรส (ไม่มีเงินได้)</span> <span class="font-bold">60,000 บ.</span></li>
+                                <li class="flex justify-between border-b border-gray-100 pb-1"><span>บุตร (คนละ)</span> <span class="font-bold">30,000 บ.</span></li>
+                                <li class="text-xs text-gray-500">*บุตรคนที่ 2 ขึ้นไป (เกิดตั้งแต่ปี 61) ลดหย่อน 60,000 บ.</li>
+                            </ul>
+                            <ul class="space-y-2">
+                                <li class="flex justify-between border-b border-gray-100 pb-1"><span>ฝากครรภ์และคลอดบุตร</span> <span class="font-bold">max 60,000 บ.</span></li>
+                                <li class="flex justify-between border-b border-gray-100 pb-1"><span>อุปการะพ่อแม่ (อายุ 60+)</span> <span class="font-bold">30,000 บ./คน</span></li>
+                                <li class="flex justify-between border-b border-gray-100 pb-1"><span>ผู้พิการ/ทุพพลภาพ</span> <span class="font-bold">60,000 บ./คน</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-l-8 border-green-500">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-green-800"><i class="fa-solid fa-shield-heart mr-2"></i>กลุ่มที่ 2: ประกันและการลงทุน</h3>
+                            <span class="bg-red-100 text-red-600 text-xs px-2 py-1 rounded-full font-bold">กลุ่มเกษียณรวมกันไม่เกิน 500,000 บ.</span>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-x-8 gap-y-2 text-sm">
+                            <div class="flex justify-between items-center py-1"><span><i class="fa-solid fa-user-shield text-green-500 w-6"></i>ประกันสังคม</span> <span class="font-bold">max 9,000</span></div>
+                            <div class="flex justify-between items-center py-1"><span><i class="fa-solid fa-heart-pulse text-green-500 w-6"></i>ประกันชีวิต+สุขภาพ</span> <span class="font-bold">max 100,000</span></div>
+                            <div class="flex justify-between items-center py-1"><span><i class="fa-solid fa-wheelchair text-green-500 w-6"></i>ประกันสุขภาพพ่อแม่</span> <span class="font-bold">max 15,000</span></div>
+                            <div class="flex justify-between items-center py-1 bg-green-50 rounded px-2"><span><i class="fa-solid fa-piggy-bank text-green-500 w-6"></i>ประกันบำนาญ</span> <span class="font-bold">15% (max 200k)</span></div>
+                            <div class="flex justify-between items-center py-1 bg-green-50 rounded px-2"><span><i class="fa-solid fa-building-columns text-green-500 w-6"></i>PVD / กบข.</span> <span class="font-bold">15% (max 500k)</span></div>
+                            <div class="flex justify-between items-center py-1 bg-green-50 rounded px-2"><span><i class="fa-solid fa-chart-pie text-green-500 w-6"></i>RMF</span> <span class="font-bold">30% (max 500k)</span></div>
+                            <div class="flex justify-between items-center py-1 bg-green-50 rounded px-2"><span><i class="fa-solid fa-coins text-green-500 w-6"></i>SSF</span> <span class="font-bold">30% (max 200k)</span></div>
+                            <div class="flex justify-between items-center py-1 bg-green-50 rounded px-2"><span><i class="fa-solid fa-leaf text-green-500 w-6"></i>Thai ESG</span> <span class="font-bold">30% (max 300k)</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-purple-500">
+                        <h3 class="text-lg font-bold text-purple-800 mb-3"><i class="fa-solid fa-hand-holding-heart mr-2"></i>กลุ่มที่ 3: เงินบริจาค</h3>
+                        <ul class="text-sm space-y-2">
+                            <li class="flex items-start"><span class="text-purple-500 mr-2">•</span> <div><span class="font-bold">e-Donation (การศึกษา/กีฬา/รพ.):</span> ลดหย่อนได้ <span class="text-purple-600 font-bold">2 เท่า</span></div></li>
+                            <li class="flex items-start"><span class="text-purple-500 mr-2">•</span> <div><span class="font-bold">บริจาคทั่วไป:</span> ตามจริง</div></li>
+                            <li class="flex items-start"><span class="text-purple-500 mr-2">•</span> <div><span class="font-bold">พรรคการเมือง:</span> max 10,000 บ.</div></li>
+                            <li class="text-xs text-gray-400 mt-2">*ต้องไม่เกิน 10% ของเงินได้หลังหักค่าใช้จ่าย/ค่าลดหย่อน</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-orange-500">
+                        <h3 class="text-lg font-bold text-orange-800 mb-3"><i class="fa-solid fa-arrow-trend-up mr-2"></i>กลุ่มที่ 4: กระตุ้นเศรษฐกิจ</h3>
+                        <ul class="text-sm space-y-2">
+                            <li class="flex justify-between"><span>ดอกเบี้ยกู้บ้าน</span> <span class="font-bold">max 100,000</span></li>
+                            <li class="flex justify-between"><span>Easy E-Receipt (ปี 67)</span> <span class="font-bold">max 50,000</span></li>
+                            <li class="flex justify-between"><span>เที่ยวเมืองรอง (ปี 67)</span> <span class="font-bold">max 15,000</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="flex justify-between mt-12">
+            <a href="module1.html" class="px-6 py-3 rounded-full bg-white border border-gray-300 text-gray-600 hover:bg-gray-50 font-medium transition-all hover-lift">
+                <i class="fa-solid fa-chevron-left mr-2"></i> บทที่ 1
+            </a>
+            <a href="module3.html" class="px-8 py-3 rounded-full bg-gradient-to-r from-primary to-indigo-600 text-white font-bold shadow-lg hover:shadow-xl hover-lift flex items-center transition-all">
+                ไปต่อที่ Module 3 <i class="fa-solid fa-chevron-right ml-2"></i>
+            </a>
+        </div>
+
+    </main>
+</body>
+</html>
